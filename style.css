@@ -1,0 +1,204 @@
+body{
+    padding: 0;
+    background-image: linear-gradient(blue,yellow);
+    background-repeat: repeat;
+    /* background-size: cover; */
+    /* overflow:hidden; */
+    height: 100vh;
+}
+
+.wrapper{
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+      margin-top: 100px;
+     /* border: 2px dotted red; */
+}
+
+.container{
+    width: 50%;
+    /* padding: 30px; */
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #596275; 
+    border-radius: 10px;
+     position: relative;
+    height: 120px;
+    margin: auto;
+}
+
+h1{
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 800;
+    background: linear-gradient( 
+            to right, #eedd44,#fff, #ff6b08, 
+             #cf23cf ); 
+             -webkit-background-clip: text;
+             -webkit-text-fill-color: transparent; 
+        
+}
+#head{
+    display: flex;
+    justify-content: center;
+}
+#input{
+    display: flex;
+    justify-content: center;
+}
+.input{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.text{
+    width: 50%;
+    height: 5px;
+    padding: 20px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    outline: none;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-size: large;
+}
+.btn{
+    height: 50px;
+    width: 60px;
+    padding-bottom: 0;
+    /* position: absolute; */
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: blue;
+    font-weight: bolder;
+
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: cornflowerblue;
+}
+.task{
+    width: 50%;
+    /* padding: 8px; */
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 3px solid rgb(117, 22, 22);
+    border-radius: 10px;
+    color: #fff;
+    background-color: rgb(179, 90, 58);
+    position: relative;
+    height: 60px;
+    transition: 0.2s;
+    margin: auto;
+}
+.hover:hover{
+    cursor: pointer;
+    background-color: grey;
+}
+.task-name{
+    position: absolute;
+    left: 60px;
+    letter-spacing: 1.5px;
+}
+.close-btn{
+    /* margin-right: 10px; */
+    width: 25px;
+    height: 20px;
+    /* padding: 10px 10px 15px 10px; */
+    font-weight: bold;
+   position: absolute;
+    right: 20px;
+    top:20px;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+}
+
+.close-btn:hover{
+    background-color: burlywood;
+    color: #fff;
+}
+/* .checked:hover{
+    background-color: brown;
+} */
+.checked{
+    background-color: coral;
+}
+.checked::before{
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 15px;
+  left: 15px;
+  transform: rotate(50deg);
+  height: 20px;
+  width: 8px;
+}
+.space{
+    padding: 10px;
+}
+
+@media screen and (max-width:600px){
+    body{
+        /* overflow: hidden; */
+    }
+    h1{
+        font-size: x-large;
+    }
+    .wrapper{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+         margin-top: 100px;
+         margin-left: 0;
+         /* margin-left: 70px; */
+    }
+    .container{
+        width: 100%;
+        /* padding: 30px; */
+        padding-left: 5px;
+        padding-right: 5px;
+        background-color: darkorange;
+        border-radius: 10px;
+        position: relative;
+        height: 120px;
+    }
+
+    .task{
+        width: 100%;
+        /* padding: 8px; */
+        padding-left: 5px;
+        padding-right: 5px;
+        border: 3px solid rgb(117, 22, 22);
+        border-radius: 10px;
+        color: #fff;
+        background-color: rgb(179, 90, 58);
+        position: relative;
+        height: 60px;
+        transition: 2s;
+    }
+    .text{
+        width: 50%;
+        height: 5px;
+        padding: 20px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+        outline: none;
+        border-radius: 10px;
+        letter-spacing: 1px;
+        font-size: large;
+    }
+    .btn{
+        padding-top: 0;
+        padding-bottom: 0;
+        /* height:30px; */
+    }
+    
+    
+    
+}
